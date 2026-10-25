@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="it">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Study Dashboard</title>
+    <meta
+      name="description"
+      content="Study Dashboard: app personale per seguire il proprio percorso universitario."
+    />
+    <style>
+      :root {
+        --bg: #fafaf9;
+        --fg: #1c1917;
+        --muted: #57534e;
+        --line: #e7e5e4;
+        --accent: #0f766e;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #1c1917;
+          --fg: #f5f5f4;
+          --muted: #a8a29e;
+          --line: #44403c;
+          --accent: #5eead4;
+        }
+      }
+      body {
+        margin: 0;
+        background: var(--bg);
+        color: var(--fg);
+        font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif;
+      }
+      main {
+        max-width: 42rem;
+        margin: 0 auto;
+        padding: 3rem 1rem 4rem;
+      }
+      h1 {
+        font-size: 1.75rem;
+        margin: 0 0 0.25rem;
+      }
+      h2 {
+        font-size: 1.15rem;
+        margin: 2.5rem 0 0.5rem;
+        padding-top: 1.5rem;
+        border-top: 1px solid var(--line);
+      }
+      .lead {
+        color: var(--muted);
+        margin: 0 0 1.5rem;
+      }
+      a {
+        color: var(--accent);
+      }
+      li {
+        margin: 0.35rem 0;
+      }
+      footer {
+        margin-top: 3rem;
+        color: var(--muted);
+        font-size: 0.875rem;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>Study Dashboard</h1>
+      <p class="lead">App personale per seguire il proprio percorso universitario.</p>
+
+      <p>
+        Study Dashboard è un'applicazione privata, usata da una sola persona, che raccoglie in un
+        unico posto le ore di studio, la preparazione degli esami, gli appelli e il libretto. Non
+        è un servizio aperto al pubblico: gira sul computer del suo proprietario e non ha utenti
+        esterni.
+      </p>
+
+      <h2 id="privacy">Norme sulla privacy</h2>
+      <p>Ultimo aggiornamento: 25 ottobre 2026.</p>
+      <ul>
+        <li>
+          <strong>Quali dati legge.</strong> Con l'autorizzazione Google
+          <code>gmail.readonly</code> (sola lettura) l'app legge, dalla casella email del suo
+          proprietario, solo i messaggi con l'etichetta <em>Uniweb</em>: le email automatiche
+          dell'università su iscrizioni agli appelli, voti e verbali.
+        </li>
+        <li>
+          <strong>Che cosa conserva.</strong> Solo i dati che servono ad aggiornare appelli e
+          libretto: date, nome e codice dell'esame, voto, identificativo del messaggio. Il testo
+          delle email non viene mai salvato.
+        </li>
+        <li>
+          <strong>Dove restano i dati.</strong> Sul computer del proprietario, in un database
+          locale. Non vengono inviati a terzi, venduti, condivisi o usati per pubblicità.
+        </li>
+        <li>
+          <strong>Nessuna modifica alla posta.</strong> L'app non invia, cancella né modifica
+          email.
+        </li>
+        <li>
+          <strong>Revoca.</strong> L'accesso si può revocare in qualsiasi momento da
+          <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>;
+          i dati già salvati restano solo sul computer del proprietario, che può cancellarli.
+        </li>
+      </ul>
+      <p>
+        L'uso dei dati ricevuti dalle API di Google rispetta le
+        <a href="https://developers.google.com/terms/api-services-user-data-policy"
+          >Google API Services User Data Policy</a
+        >, compresi i requisiti di uso limitato (Limited Use).
+      </p>
+
+      <footer>Study Dashboard · uso personale</footer>
+    </main>
+  </body>
+</html>
